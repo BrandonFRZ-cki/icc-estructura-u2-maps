@@ -137,7 +137,8 @@ public class DirectorioTelefonico {
     }
 }
 ```
-
+# Captura de Ejecucion → Brandon Rivera
+![img.png](img.png)
 ---
 
 ### Consideraciones sobre `hashCode()` y `equals()`
