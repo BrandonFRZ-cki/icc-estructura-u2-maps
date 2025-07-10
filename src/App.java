@@ -61,7 +61,25 @@ public class App {
     }
 
     private static void runEjerccios() {
-        //throw new UnsupportedOperationException("Not implemented yet");
+        System.out.println("*** Ejercicios ***");
+        Ejercicios ejercicios = new Ejercicios();
 
+        // Anagramas
+        System.out.println(ejercicios.areAnagrams("listen", "silent"));
+        System.out.println(ejercicios.areAnagrams("hello", "bello"));
+        System.out.println(ejercicios.sonAnagramas("roma", "amor"));
+
+        // Sumatoria de dos
+        int[] resultado = ejercicios.sumatoriaDeDos(new int[] {9, 2, 3, 6}, 5);
+        if (resultado != null) {
+            System.out.println("Índices con suma 5: [" + resultado[0] + ", " + resultado[1] + "]");
+        } else {
+            System.out.println("No se encontró una suma igual a 5.");
+        }
+
+        // Contar caracteres
+        System.out.print("Frecuencia de caracteres en 'hola': ");
+        ejercicios.contarCaracteres("hola");
     }
+
 }
